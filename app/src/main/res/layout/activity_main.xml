@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/txtView"
+           android:textFontWeight="16"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnExplicit"
+           android:text="@string/btnExplicit"
+           android:onClick="ExplicitCall"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnImplicit"
+           android:text="@string/btnImplicit"
+           android:onClick="ImplicitCall"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnShare"
+           android:text="@string/btnShare"
+           android:onClick="shareMessage"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnImageSelect"
+           android:text="@string/btnImage"
+           android:onClick="selectImage"/>
+
+   </LinearLayout>
+ </ScrollView>
+</android.support.constraint.ConstraintLayout>
